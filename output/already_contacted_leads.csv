@@ -1,0 +1,2 @@
+﻿company_name,website,domain,already_contacted,careers_url,jobs_url,contact_url,about_url,emails,has_email,has_careers_page,pages_fetched,score,outreach_priority,score_reasons
+Previously Contacted Startup,https://previously-contacted-startup.com,previously-contacted-startup.com,True,https://previously-contacted-startup.com/careers,,https://previously-contacted-startup.com/contact,https://previously-contacted-startup.com/about,hello@previously-contacted-startup.com,True,True,4,55,HIGH,+ automation (20) | + api (15) | + data (15)

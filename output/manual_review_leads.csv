@@ -1,0 +1,3 @@
+﻿company_name,website,domain,already_contacted,careers_url,jobs_url,contact_url,about_url,emails,has_email,has_careers_page,pages_fetched,score,outreach_priority,score_reasons
+Example Analytics Tool,https://example-analytics-tool.com,example-analytics-tool.com,False,,,https://example-analytics-tool.com/contact,https://example-analytics-tool.com/about,info@example-analytics-tool.com,True,False,2,35,MEDIUM,+ data (15) | + analytics (10) | + reporting (10)
+Sample SaaS Company,https://sample-saas-company.com,sample-saas-company.com,False,https://sample-saas-company.com/careers,,https://sample-saas-company.com/contact,,team@sample-saas-company.com,True,True,2,30,MEDIUM,+ saas (10) | + integrations (10) | + reporting (10)

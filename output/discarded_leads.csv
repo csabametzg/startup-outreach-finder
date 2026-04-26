@@ -1,0 +1,3 @@
+﻿company_name,website,domain,already_contacted,careers_url,jobs_url,contact_url,about_url,emails,has_email,has_careers_page,pages_fetched,score,outreach_priority,score_reasons
+Example Infra Corp,https://example-infra-corp.com,example-infra-corp.com,False,,,https://example-infra-corp.com/contact,https://example-infra-corp.com/about,info@example-infra-corp.com,True,False,2,-5,LOW,+ data (15) | infrastructure (-10) | senior (-15)
+Unreachable Example,https://unreachable-example.com,unreachable-example.com,False,,,,,,False,False,0,0,LOW,Homepage not reachable
