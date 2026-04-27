@@ -121,19 +121,19 @@ GitHub: https://github.com/csabametzg
 The output shows how companies are categorized by score and outreach priority.
 
 
-High priority leads
+#### High priority leads
 
 ![High priority leads](output/sample_high_priority_leads_1.png)
 ![High priority leads](output/sample_high_priority_leads_2.png)
 
 
-Manual review leads
+#### Manual review leads
 
 ![Manual review leads](output/manual_review_leads_1.png)
 ![Manual review leads](output/manual_review_leads_2.png)
 
 
-Discarded leads
+#### Discarded leads
 
 ![Discarded leads](output/discarded_leads_1.png)
 ![Discarded leads](output/discarded_leads_2.png)
