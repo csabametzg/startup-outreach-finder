@@ -88,15 +88,23 @@ Sample Data Platform,https://sample.com,60,HIGH
 
 This project demonstrates:
 
-automation thinking
-data-driven decision making
-API & scraping workflows
-building a simple but complete pipeline
+- automation thinking
+- data-driven decision making
+- API & scraping workflows
+- building a simple but complete pipeline
 
 ## Notes
-This repository includes sample data only
-Real datasets and contacted companies are excluded
-Scraping should respect each site's terms of service
+- This repository includes sample data only
+- Real datasets and contacted companies are excluded
+- Scraping should respect each site's terms of service
+
+
+## How to run
+
+```bash
+pip install -r requirements.txt
+python src/main.py
+```
 
 
 ## Author
@@ -109,6 +117,9 @@ GitHub: https://github.com/csabametzg
 
 
 ## Example result
+
+The output shows how companies are categorized by score and outreach priority.
+
 
 High priority leads
 
