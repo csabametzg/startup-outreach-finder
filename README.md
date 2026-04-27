@@ -1,55 +1,120 @@
 # Startup Outreach Finder
 
-A Python automation tool that collects startup websites, extracts useful contact and company information, scores companies based on relevance, and generates prioritized outreach lead lists.
+A Python-based automation system that discovers, analyzes, and prioritizes startup companies for targeted outreach.
 
-The project was built to support targeted outreach for Python automation, API, data processing, and SaaS-related opportunities.
+Instead of applying randomly to jobs, this project identifies high-fit companies based on data, automation, and API-related signals.
 
-## Features
+---
 
-- Collects startup company websites
-- Extracts contact, careers, jobs, and about page links
-- Fetches multiple internal pages for analysis
-- Extracts public email addresses from company pages
-- Combines visible website text for scoring
-- Scores companies based on keywords such as Python, automation, API, data, analytics, reporting, ETL, pipeline, and SaaS
-- Applies negative scoring for less relevant terms such as senior, architect, infrastructure, or US-only
-- Exports leads into prioritized CSV files:
-  - high priority leads
-  - manual review leads
-  - already contacted leads
-  - discarded leads
+## Why this project exists
 
-## Tech Stack
+Most developers apply to hundreds of jobs with low response rates.
 
-- Python
-- pandas
-- requests
-- BeautifulSoup
-- Selenium
-- webdriver-manager
-- lxml
+This project takes a different approach:
 
-## How It Works
+- Find relevant startups
+- Analyze their websites and data
+- Score them based on technical fit
+- Generate a prioritized outreach list
 
-1. Load startup websites from a CSV file.
-2. Normalize company URLs and domains.
-3. Fetch the homepage and relevant internal pages.
-4. Extract contact, careers, jobs, and about links.
-5. Extract public emails and visible website text.
-6. Score each company based on keyword relevance.
-7. Export categorized lead lists into CSV files.
+Result: **smarter targeting instead of mass applications**
 
-## Example Input
+---
 
-```csv
-company_name,website
-Example SaaS,https://example.com
+## What it does
+
+This system:
+
+- Collects startup websites
+- Extracts relevant company pages (careers, jobs, contact, about)
+- Scrapes and processes multiple pages per company
+- Extracts public email addresses
+- Analyzes visible website text
+- Scores companies based on relevance to:
+  - Python
+  - automation
+  - APIs
+  - data / analytics / pipelines
+- Filters and categorizes leads into:
+  - HIGH priority
+  - MEDIUM priority
+  - LOW / discarded
+
+---
+
+## Example workflow
+
+Input:
+100 startup websites
+
+↓ scraping + processing
+
+↓ scoring based on keywords
+
+Output:
+10–20 high-priority leads
+
+
+## Project structure
+
+``` markdown
+src/
+├── main.py # pipeline entry point
+├── scraper.py # HTML fetching & navigation
+├── extractor.py # link and content extraction
+├── scorer.py # company scoring logic
+├── utils.py # helpers
+├── thehub_collector.py # example startup data collector
+
+data/
+├── startups.csv # input sample
+├── thehub_startups.csv # collected sample
+
+output/
+├── high_priority_leads.csv
+├── manual_review_leads.csv
+├── discarded_leads.csv
 ```
 
+## Example output
 
-Example Output
 ```csv
-company_name,website,domain,has_email,has_careers_page,score,outreach_priority,score_reasons
-Example SaaS,https://example.com,example.com,True,True,65,HIGH,+ python (25) | + automation (20) | + api (15)
+company_name,website,score,outreach_priority
+Example Automation SaaS,https://example.com,80,HIGH
+Sample Data Platform,https://sample.com,60,HIGH
 ```
 
+## Key idea
+
+This project demonstrates:
+
+automation thinking
+data-driven decision making
+API & scraping workflows
+building a simple but complete pipeline
+
+## Notes
+This repository includes sample data only
+Real datasets and contacted companies are excluded
+Scraping should respect each site's terms of service
+
+
+## Author
+
+Csaba Mészáros
+
+Junior Python Developer focused on automation, APIs, and data workflows
+
+GitHub: https://github.com/csabametzg
+
+
+## Example result
+
+![High priority leads](output/sample_high_priority_leads_1.png)
+![High priority leads](output/sample_high_priority_leads_2.png)
+
+![Manual review leads](output/manual_review_leads_1.png)
+![Manual review leads](output/manual_review_leads_2.png)
+
+![Discarded leads](output/discarded_leads_1.png)
+![Discarded leads](output/discarded_leads_2.png)

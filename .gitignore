@@ -5,3 +5,10 @@ __pycache__/
 *.pyc
 
 .env
+
+data/startups.csv
+data/thehub_startups.csv
+data/contacted_domains.txt
+
+output/*.csv
+!output/sample_high_priority_leads.csv
