@@ -57,6 +57,8 @@ Output:
 
 ## Project structure
 
+The project is structured as a simple data pipeline:
+
 ``` markdown
 src/
 ├── main.py # pipeline entry point
@@ -78,11 +80,7 @@ output/
 
 ## Example output
 
-```csv
-company_name,website,score,outreach_priority
-Example Automation SaaS,https://example.com,80,HIGH
-Sample Data Platform,https://sample.com,60,HIGH
-```
+See screenshots below for full output examples.
 
 ## Key idea
 
